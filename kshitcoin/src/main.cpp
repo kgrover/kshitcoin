@@ -2775,7 +2775,7 @@ bool InitBlockIndex() {
         if (fTestNet)
         {
             block.nTime    = 1393717162;
-            block.nNonce   = 385270584;
+            block.nNonce   = 440824;
         }
 
         //// debug print
@@ -2783,7 +2783,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        assert(block.hashMerkleRoot == uint256("0x5813d4cfab0eeda94a15d11c5e7d6895e667fbbe67c59ef9a1b3bc232c9a0b7f"));
         block.print();
         assert(hash == hashGenesisBlock);
 
